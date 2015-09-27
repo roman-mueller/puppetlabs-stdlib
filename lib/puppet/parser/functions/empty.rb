@@ -15,7 +15,7 @@ Returns true if the variable is empty.
 
     unless value.is_a?(Array) || value.is_a?(Hash) || value.is_a?(String) || value.is_a?(Numeric)
       raise(Puppet::ParseError, 'empty(): Requires either ' +
-        'array, hash or string to work with')
+        'array, hash, string or integer to work with')
     end
 
     if value.is_a?(Numeric)
